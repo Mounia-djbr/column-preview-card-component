@@ -20,8 +20,7 @@ body {
     font-family: Karla;
     background-color: var(--Light-Grey-Color);
     height: 100vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
     align-items: center;
 
