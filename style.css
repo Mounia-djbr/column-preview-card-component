@@ -1,68 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@font-face {
+    font-family: Karla;
+    src: url(./Fonts/Karla/static/Karla-Regular.ttf);
+}
 
-body{
-    background-color: hsl(0, 0%, 95%);
-    min-height: 100vh;
+:root {
+    --Cayon-Color: hsl(179, 62%, 43%);
+    --Bright-Yellow-Color: hsl(71, 73%, 54%);
+    --Light-Grey-Color: hsl(204, 43%, 93%);
+    --Grayish-Blue-Color: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Karla;
+    background-color: var(--Light-Grey-Color);
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    font-size: 14px;
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight: 400;
+
 }
-.container{
-    max-width: 914px;
-    margin: 0 auto;
-}
-.allbox{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border-radius: 12px;
-    margin: 2rem;
-    overflow: hidden;
-}
-.box1{
-    background: hsl(31, 77%, 52%);
-}
-.box2{
-    background: hsl(184, 100%, 22%);
-}
-.box3{
-    background: hsl(179, 100%, 13%);
-}
-.bx{
+
+.first {
     padding: 40px;
+    background-color: rgb(255, 255, 255);
 }
-.bx h2{
-    font-family: 'Big Shoulders Display', cursive;
-    text-transform: uppercase;
-    color: hsl(0, 0%, 95%);
-    font-size: 30px;
+
+.first h2 {
+    color: var(--Cayon-Color);
 }
-.bx p{
-    color: hsla(0, 0%, 100%, 0.75);
+
+.first h3 {
+    margin-top: 20px;
+    color: var(--Bright-Yellow-Color);
+}
+
+.first p {
+    margin-top: 10px;
     line-height: 1.5;
+    font-size: 16px;
 }
-.bx a {
-    text-decoration: none;
-    background-color: hsl(0, 0%, 95%);
-    padding: 12px 27px;
-    border-radius: 25px;
-    margin-top: 60px;
-    display: inline-block;
-    border: 2px solid hsl(0, 0%, 95%);
-    transition: all .5s ease-in-out;
+
+.first p {
+    color: var(--Grayish-Blue-Color);
 }
-.box1 a{
-    color: hsl(31, 77%, 52%);
+
+.Second {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
-.box2 a{
-    color: hsl(184, 100%, 22%);
+
+.third {
+    padding: 40px;
+    background-color: var(--Cayon-Color);
 }
-.box3 a{
-    color: hsl(179, 100%, 13%);
+
+.third h3 {
+    margin-bottom: 15px;
 }
-.bx a:hover{
-    color: hsl(0, 0%, 95%);
-    background: transparent;
+
+.third h2,
+.third h3, 
+.third p, 
+.fourth h3 {
+    color: var(--Light-Grey-Color);
+}
+
+.third span {
+    color: hsla(216, 20%, 85%, 0.853);
+}
+
+.third p {
+    margin-top: 15px;
+}
+
+.third span h2 {
+    display: inline;
+}
+
+.third input {
+    font-weight: 700;
+    border-radius: 5px;
+    margin-top: 45px;
+    background-color: var(--Bright-Yellow-Color);
+    padding: 17px 95px;
+    border: none;
+    color: var(--Light-Grey-Color);
+}
+
+.fourth {
+    padding: 40px;
+    background-color: #4abebd;
+}
+
+.fourth ul {
+    margin-top: 25px;
+    list-style: none;
+}
+
+.fourth li {
+    margin-bottom: 3px;
+    color: hsla(216, 20%, 85%, 0.853);
 }
